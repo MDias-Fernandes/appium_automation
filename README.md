@@ -1,1 +1,1 @@
-# appium_automation
+# appium + ruby - mobile automation

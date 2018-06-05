@@ -1,1 +1,1 @@
-# appium + ruby - mobile automation
+# appium + cucumber + ruby - mobile automation

@@ -9,4 +9,5 @@
     "orientation": "LANDSCAPE",
     "browserName": "Safari",
     "printPageSourceOnFindFailure": true
+    
 }

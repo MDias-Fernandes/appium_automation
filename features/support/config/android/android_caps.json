@@ -8,12 +8,11 @@
     "orientation": "LANDSCAPE",
     "browserName": "Chrome",
     "printPageSourceOnFindFailure": true,
-
-    "appActivity": "",
-    "appPackage": "",
+    "app": "C:\\appium\\automation_mobile\\appium_automation\\cucumber\\app_",
+	"appPackage": "br.net.nimbi.outsystems01.NimbiDrive",
+	"appActivity": ".MainActivity",
     "appWaitDuration": 3000,
     "adbPort": 5037,
     "isHeadless": false,
     "systemPort": 8200
-    
 }

@@ -8,7 +8,7 @@
     "orientation": "LANDSCAPE",
     "browserName": "Chrome",
     "printPageSourceOnFindFailure": true,
-    "app": "C:\\appium\\automation_mobile\\appium_automation\\cucumber\\app_",
+    "app": "C:\\appium\\automation_mobile\\appium_automation\\cucumber\\app",
 	"appPackage": "br.net.nimbi.outsystems01.NimbiDrive",
 	"appActivity": ".MainActivity",
     "appWaitDuration": 3000,

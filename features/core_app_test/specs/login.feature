@@ -1,15 +1,15 @@
-# language: pt
+# language: en
 
 # Feature description
 @nimbiDrive @login
-Funcionalidade: Login no app
+Feature: Login no app
     Login no app com um usuário que possua credenciais válidas
 
 # Scenario description
 @login_1
-Cenário: Login VÁLIDO no app
-    Dado que eu seja um usuário com o app instalado no meu dispositivo mobile
-    E possua credenciais válidas de acesso
-    Quando inserir as credenciais na tela de login do app
-    E clicar no botão ACESSAR
-    Então sou redirecionado para a tela principal do app com sucesso
+Scenario: Login VÁLIDO no app
+    Given que eu seja um usuário com o app instalado no meu dispositivo mobile
+    And possua credenciais válidas de acesso
+    When inserir as credenciais na tela de login do app
+    And clicar no botão ACESSAR
+    Then sou redirecionado para a tela principal do app com sucesso

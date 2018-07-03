@@ -3,6 +3,7 @@ require 'pry'
 require 'appium_lib'
 require 'faker'
 require 'cpf_faker'
+require 'site_prism'
 
 def caps
     {
@@ -13,8 +14,6 @@ def caps
             automationName: "UiAutomator2",
             newCommandTimeout: 60,
             udid: "",
-            orientation: "LANDSCAPE",
-            browserName: "Chrome",
             printPageSourceOnFindFailure: true,
             app: "C:\\appium\\appium_automation\\features\\app\\base.apk",
             appPackage: "br.net.nimbi.outsystems01.NimbiDrive",
@@ -27,5 +26,6 @@ def caps
     }
 end
 
-Appium::Driver.new(caps, true)
+#World(ScreensMapping) #module "ScreensMapping" was defined as global
 Appium.promote_appium_methods Object
+Appium::Driver.new(caps, true)

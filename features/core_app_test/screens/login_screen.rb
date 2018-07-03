@@ -1,25 +1,22 @@
 # encoding: utf-8
 # !/usr/bin/env ruby
 
-class LoginScreen < Appium::Driver
-    def initialize
+class LoginScreen < CommonScreen
+    def elements
         @field_login = 'Input_UsernameVal'
         @field_pwd = 'Input_PasswordVal'
         @btn_login = 'android.widget.Button'
     end
 
-    def login(login)
-        hide_keyboard
-        find_element(:id, @field_login).send_keys(login)
+    def userLogin_in_app(userLogin)
+        send_keys_id(@field_login, userLogin)
     end
 
-    def password(password)
-        hide_keyboard
-        find_element(:id, @field_pwd).send_keys(password)
+    def userPwd_in_app(userPwd)
+        send_keys_id(@field_pwd, userPwd)
     end
 
-    def access
-        hide_keyboard
-        find_element(:id, @btn_login).click
+    def click_login_btn
+        click_over_id(@btn_login)
     end
 end

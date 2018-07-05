@@ -1,5 +1,6 @@
 Given("que eu seja um usuário com o app instalado no meu dispositivo mobile") do
-    #commons_screen.principal_screen_open?
+    sleep(30)
+    commons_screen.principal_screen_open?
 end
   
 Given("possua credenciais válidas de acesso") do

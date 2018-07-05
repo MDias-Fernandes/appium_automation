@@ -1,7 +1,7 @@
 class CommonScreen
 
     def initialize
-        @home_screen = find_element(:id, "Logo")
+        @home_screen = @driver.find_element(:id, "Logo")
     end
 
     def principal_screen_open?

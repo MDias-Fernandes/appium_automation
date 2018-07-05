@@ -1,5 +1,9 @@
-Before do |scenario|
+=begin 
+Before do
+    @driver.start_driver
+end
+=end
 
-    $driver.start_driver
-
+After do |scenario|
+    driver_quit
 end

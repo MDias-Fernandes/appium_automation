@@ -4,6 +4,9 @@ require 'appium_lib'
 require 'faker'
 require 'cpf_faker'
 require 'site_prism'
+require 'selenium-webdriver'
+require 'capybara'
+require 'capybara/cucumber'
 
 def caps
     {
@@ -27,5 +30,6 @@ def caps
 end
 
 #World(ScreensMapping) #module "ScreensMapping" was defined as global
+@appium_driver = Appium::Driver.new(caps, true)
+@driver = @appium_driver.start_driver
 Appium.promote_appium_methods Object
-Appium::Driver.new(caps, true)

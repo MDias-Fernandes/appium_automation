@@ -1,18 +1,19 @@
 Given("que eu seja um usuário com o app instalado no meu dispositivo mobile") do
     sleep(30)
-    commons_screen.principal_screen_open?
+    @common_screen.principal_screen_open.should eq(true)
+    p "Tela de Login carregada"
 end
   
 Given("possua credenciais válidas de acesso") do
-    login_screen.userLogin_in_app("renan.mendes@nimbi.com.br")
+    @login_screen.userLogin_in_app("renan.mendes@nimbi.com.br")
 end
   
 When("inserir as credenciais na tela de login do app") do
-    login_screen.userPwd_in_app("Nimbi123!")
+    @login_screen.userPwd_in_app("Nimbi123!")
 end
   
 When("clicar no botão ACESSAR") do
-    login_screen.click_login_btn
+    @login_screen.click_login_btn
 end
   
 Then("sou redirecionado para a tela principal do app com sucesso") do

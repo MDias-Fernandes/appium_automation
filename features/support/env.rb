@@ -29,6 +29,7 @@ def caps
     }
 end
 
+#browserName: "Chrome"
 #World(ScreensMapping) #module "ScreensMapping" was defined as global
 @appium_driver = Appium::Driver.new(caps, true)
 @driver = @appium_driver.start_driver

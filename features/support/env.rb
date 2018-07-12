@@ -7,7 +7,9 @@ require 'site_prism'
 require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/cucumber'
-#require 'spec_helper'
+
+#require_relative for instatiate the module with the classes that have the objects mapped
+require_relative 'spec_helper'
 
 def caps
     {

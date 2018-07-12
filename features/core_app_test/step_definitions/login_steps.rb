@@ -5,6 +5,7 @@ Given("que eu seja um usuário com o app instalado no meu dispositivo mobile") d
 end
   
 Given("possua credenciais válidas de acesso") do
+    sleep(20)
     login_screen.userLogin_in_app("renan.mendes@nimbi.com.br")
 end
   

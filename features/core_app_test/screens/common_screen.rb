@@ -1,8 +1,9 @@
 class CommonScreen
 
     def principal_screen_open
-        home_screen = @driver.find_element(:id, "Logo")
-        return exists?(home_screen)
+        #home_screen = @driver.find_element(:id, "logo")
+        #return exists?(home_screen)
+        #home_screen.click
     end
 
     def send_keys_id(id, value)

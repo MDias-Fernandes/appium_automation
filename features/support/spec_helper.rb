@@ -5,11 +5,9 @@ Dir[File.join(File.dirname(__FILE__), '../core_app_test/screens/*.rb')].each { |
 module Screen
     def common_screen
         @common_screen ||= CommonScreen.new
-        return @common_screen
     end
 
     def login_screen
         @login_screen ||= LoginScreen.new
-        return @login_screen
     end
 end

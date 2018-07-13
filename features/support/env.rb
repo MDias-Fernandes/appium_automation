@@ -26,6 +26,5 @@ def caps
 end
 
 World(Screen)
-@appium_driver = Appium::Driver.new(caps, true)
-@driver = @appium_driver.start_driver
+Appium::Driver.new(caps, true)
 Appium.promote_appium_methods Object

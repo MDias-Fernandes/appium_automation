@@ -18,7 +18,7 @@ def caps
             platformVersion: "5.1",
             deviceName: "ASUS_X013D",
             automationName: "UiAutomator2",
-            app: "C:\\appium\\appium_automation\\features\\app\\base.apk",
+            app: "C:\\appium\\appium_automation\\features\\support\\base.apk",
             appPackage: "br.net.nimbi.outsystems01.NimbiDrive",
             appActivity: ".MainActivity"
         }

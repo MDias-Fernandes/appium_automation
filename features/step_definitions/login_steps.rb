@@ -1,16 +1,15 @@
 Given("que eu seja um usuário com o app instalado no meu dispositivo mobile") do
     sleep(20)
-    common_screen.principal_screen_open
-    puts "logo identificado"
+    element_exists = common_screen.principal_screen_open
+    puts 'logo identificado' if element_exists == true
 end
   
 Given("possua credenciais válidas de acesso") do
-    sleep(20)
-    login_screen.userLogin_in_app("renan.mendes@nimbi.com.br")
+    login_screen.userLogin_in_app('renan.mendes@nimbi.com.br')
 end
   
 When("inserir as credenciais na tela de login do app") do
-    login_screen.userPwd_in_app("Nimbi123!")
+    login_screen.userPwd_in_app('Nimbi123!')
 end
   
 When("clicar no botão ACESSAR") do

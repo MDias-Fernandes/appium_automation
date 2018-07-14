@@ -12,14 +12,16 @@ class LoginScreen < CommonScreen
     end
 
     def userLogin_in_app(userLogin)
-        send_keys_id elements[:field_login], userLogin
+        perform_tap_action(70, 615)
+        hide_keyboard
+        send_keys_id(elements[:field_login], userLogin)
     end
 
     def userPwd_in_app(userPwd)
-        send_keys_id elements[:field_pwd], userPwd
+        send_keys_id(elements[:field_pwd], userPwd)
     end
 
     def click_login_btn
-        click_over_id elements[:btn_login]
+        click_over_id(elements[:btn_login])
     end
 end

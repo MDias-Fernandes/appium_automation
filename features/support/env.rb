@@ -7,9 +7,8 @@ require 'site_prism'
 require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/cucumber'
-
-#require_relative for instatiate the module with the classes that have the objects mapped
 require_relative 'spec_helper'
+
 
 def caps
     {
@@ -31,9 +30,11 @@ def caps
     }
 end
 
+
 World(Screen)
 Appium::Driver.new(caps, true)
 Appium.promote_appium_methods Object
+
 
 def perform_tap_action(x, y)
     Appium::TouchAction.new.tap(x: x, y: y, count: 1).release.perform
